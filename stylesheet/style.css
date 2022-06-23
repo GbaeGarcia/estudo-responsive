@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@300;800&family=Staatliches&display=swap');
+body{
+    margin: 0;
+}
+body * {
+    box-sizing: border-box;
+}
+.main-area{
+    width: 100vw ;
+    height: 100vh;
+    background-color: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left > h1{
+    color: #77ffc0;
+    font-size: 3vw;
+    margin: 5px;
+}
+
+.right{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-area{
+    width: 60%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #2f2841 ;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.login-area > h1{
+    color: #1afa92;
+    margin: 0;
+    font-size: 4em;
+    
+}
+.spy{
+    width: 30vw;
+}
+
+.texto{
+    width: 100%S;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.texto > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #504569;
+    color: white;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+
+}
+
+.texto > label {
+    color: rgb(184, 182, 181);
+    margin-bottom: 10px;
+}
+
+.texto > input::placeholder{
+    color: rgb(184, 182, 181);
+
+}
+
+.butao{
+    width: 100%;
+    padding: 16px 0;
+    margin: 25px;
+    border: none;
+    border-radius: 10px;
+    color: #504569;
+    font-family: 'Staatliches', cursive;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: auto;
+    background-color: #1afa92;
+    box-shadow:  0px 10px 40px #0bfc8c70;
+}
+
+@media only screen and (max-width: 950px){
+    .login-area{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main-area{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .left > .spy{
+        order: -1;
+        width: 50%;
+    }
+    
+    .left{
+        width: 100%;
+        height: auto;
+    }
+    .left > .txt1 {
+    font-size: 5vh;
+    }
+    .left > .txt2 {
+        display: none;
+    }
+
+    .right{
+        width: 100%;
+        height: auto;
+
+    }
+
+    .login-area{
+        height: 100%;
+    }
+}
